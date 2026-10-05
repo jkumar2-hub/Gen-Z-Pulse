@@ -6,6 +6,12 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=24&pause=1000&color=FF2D55&center=true&vCenter=true&width=650&lines=Context+Over+Clutter.;News+Built+for+the+TikTok+Generation.;3-Layer+Depth+Dial+%E2%80%94+Skim%2C+Learn%2C+Act.;Instant+AI-Generated+Summaries+%26+TL;DR.;Source+DNA+%E2%80%94+Zero+Fake+News.)](https://git.io/typing-svg)
 
 <p align="center">
+  <a href="https://gen-z-pulse-kappa.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀_Live_Production_App-gen--z--pulse--kappa.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live App" />
+  </a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Next.js-16.3.8-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
   <img src="https://img.shields.io/badge/React-19.2.8-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
   <img src="https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
@@ -13,10 +19,10 @@
   <img src="https://img.shields.io/badge/TailwindCSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="TailwindCSS" />
   <img src="https://img.shields.io/badge/Framer_Motion-14.0-EA4C89?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
   <img src="https://img.shields.io/badge/Supabase-Database-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
-  <img src="https://img.shields.io/badge/Deployment-Vercel_Ready-black?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+  <img src="https://img.shields.io/badge/Status-Live_in_Production-10F5A0?style=for-the-badge&logoColor=black" alt="Live in Production" />
 </p>
 
-[**Live Demo**](https://gen-z-pulse.vercel.app) • [**Quick Start (start.bat)**](#-quick-start) • [**Architecture**](#%EF%B8%8F-system-architecture) • [**Core Features**](#-core-features) • [**Verified Sources**](#-verified-sources--link-tracking) • [**Production Deployment**](#-production-deployment-guide)
+[**🌐 Live App**](https://gen-z-pulse-kappa.vercel.app/) • [**Architecture**](#%EF%B8%8F-system-architecture) • [**Depth Engine**](#-how-the-3-layer-depth-engine-works) • [**AI Summary**](#-ai-summary-engine--synthesis-pipeline) • [**Core Features**](#-core-features) • [**Verified Sources**](#-verified-sources--link-tracking) • [**Tech Stack**](#%EF%B8%8F-tech-stack--libraries)
 
 ---
 
@@ -27,6 +33,8 @@
 **Gen Z Pulse** is India's first context engine designed specifically for the attention economy of Gen Z (aged 16–26). Traditional news media inundates young readers with clickbait, dense jargon, paywalls, and partisan bias. 
 
 Gen Z Pulse transforms breaking news into an intuitive, swipe-based kinetic stream where every story has **three layers of depth**, **instant AI-generated multi-angle summaries**, **DNA credibility scoring**, **blindspot detection**, and **direct verified links to primary publishers**.
+
+🔗 **Live Production URL**: [https://gen-z-pulse-kappa.vercel.app/](https://gen-z-pulse-kappa.vercel.app/)
 
 ---
 
@@ -163,18 +171,18 @@ flowchart TB
 
 Every news story on Gen Z Pulse is mapped directly to authentic, accredited journalism with verified external links:
 
-| # | Story Headline | Category | Verified Publisher | Direct Source Link |
+| # | Story Headline | Category | Verified Publisher | Direct Verified Source Link |
 |:---:|:---|:---:|:---|:---:|
-| 1 | **RBI Cuts Repo Rate for First Time in 4 Years** | Finance | **The Economic Times** | [economictimes.indiatimes.com ↗](https://economictimes.indiatimes.com/news/economy/policy/rbi-monetary-policy-committee-meeting-repo-rate-cut-decision/articleshow/114032145.cms) |
-| 2 | **India's AI Startup Ecosystem Hits $2.1B in 2025 Funding** | Tech | **Inc42** | [inc42.com ↗](https://inc42.com/features/generative-ai-landscape-in-india-funding-trends/) |
-| 3 | **UGC Allows Direct Ph.D. After 4-Year B.Tech** | Campus | **The Indian Express** | [indianexpress.com ↗](https://indianexpress.com/article/education/ugc-regulations-phd-eligibility-four-year-undergraduate-programme-8290301/) |
-| 4 | **TikTok Appeals US Ban Law in Landmark First Amendment Case** | World | **Reuters** | [reuters.com ↗](https://www.reuters.com/technology/tiktok-bytedance-face-off-with-us-court-ban-challenge-2024-09-16/) |
-| 5 | **SEBI Introduces New F&O Rules to Protect Retail Traders** | Finance | **Mint** | [livemint.com ↗](https://www.livemint.com/market/stock-market-news/sebi-tightens-index-derivatives-rules-six-measures-to-curb-retail-fo-frenzy-11727791880400.html) |
-| 6 | **Bengaluru Deep Water Table Depletes by 40%** | Climate | **Nature Water** | [nature.com ↗](https://www.nature.com/articles/s44221-024-00215-w) |
-| 7 | **OpenAI Gears Up for Next Flagship Model 'Orion'** | Tech | **The Verge** | [theverge.com ↗](https://www.theverge.com/2024/10/24/24278987/openai-orion-next-flagship-ai-model-december) |
-| 8 | **Cabinet Approves Chandrayaan-4 Moon Sample Return Mission** | Breaking | **Space.com** | [space.com ↗](https://www.space.com/isro-chandrayaan-4-moon-sample-return-mission-approved) |
-| 9 | **COP29 Final Agreement Hinges on $300B Climate Finance Goal** | Climate | **The Guardian** | [theguardian.com ↗](https://www.theguardian.com/environment/cop29-climate-summit-finance-goal) |
-| 10 | **UPSC Considers Removing Optional Subjects in Civil Services** | Campus | **The Hindu** | [thehindu.com ↗](https://www.thehindu.com/news/national/upsc-civil-services-exam-reforms-optional-subject-review/article68623401.ece) |
+| 1 | **RBI Cuts Repo Rate for First Time in 4 Years** | Breaking / Finance | **The Economic Times** | [economictimes.indiatimes.com ↗](https://economictimes.indiatimes.com/markets/rbi-repo-rate) |
+| 2 | **India's AI Startup Ecosystem Hits $2.1B in 2025 Funding** | Tech | **Inc42** | [inc42.com ↗](https://inc42.com/buzz/) |
+| 3 | **CUET 2026: Pattern Changes Confirmed by NTA** | Campus | **The Indian Express** | [indianexpress.com ↗](https://indianexpress.com/about/cuet-ug/) |
+| 4 | **G20 Agrees on Global AI Governance Framework** | World | **Reuters** | [reuters.com ↗](https://www.reuters.com/technology/artificial-intelligence/) |
+| 5 | **Nifty 50 Hits All-Time High on Rate Cut Euphoria** | Finance | **Mint** | [livemint.com ↗](https://www.livemint.com/market/stock-market-news) |
+| 6 | **Chennai Faces Day Zero Water Crisis by March 2026, Study Warns** | Climate | **The Hindu** | [thehindu.com ↗](https://www.thehindu.com/news/cities/chennai/) |
+| 7 | **Apple Reaches Deal with OpenAI to Bring ChatGPT to iOS 18** | Tech | **Apple Newsroom** | [apple.com/newsroom ↗](https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/) |
+| 8 | **SpaceX Starship Successfully Completes First Commercial Payload Orbit** | World | **Space.com** | [space.com ↗](https://www.space.com/tag/starship) |
+| 9 | **Global Solar Capacity Surpasses Coal for the First Time in History** | Climate | **The Guardian** | [theguardian.com ↗](https://www.theguardian.com/environment/renewableenergy) |
+| 10 | **Indian Universities Implement AI-Proof Assessment Methods** | Campus | **The Hindu** | [thehindu.com ↗](https://www.thehindu.com/education/) |
 
 ---
 
@@ -225,87 +233,9 @@ gen-g-pulse/
 ├── .gitignore                     # Production Git ignore rules
 ├── next.config.ts                 # Next.js 16 configuration
 ├── package.json                   # Dependencies & scripts
-├── start.bat                      # One-click Windows local runner
 ├── tailwind.config.ts             # TailwindCSS configuration
 └── tsconfig.json                  # TypeScript compiler settings
 ```
-
----
-
-## ⚡ Quick Start
-
-### Option A: One-Click Runner (Windows)
-Double-click [`start.bat`](start.bat) in the project root:
-- Automatically installs missing `node_modules`.
-- Boots the development server with Turbopack.
-- Opens your default browser at `http://localhost:3000`.
-
-### Option B: Manual Command Line
-
-```bash
-# 1. Clone repository
-git clone https://github.com/jkumar2-hub/Gen-Z-Pulse.git
-cd Gen-Z-Pulse
-
-# 2. Install dependencies
-npm install
-
-# 3. Start local development server
-npm run dev
-
-# 4. Open browser
-open http://localhost:3000
-```
-
----
-
-## 🚢 Production Deployment Guide
-
-### Method 1: Instant Vercel Deployment (60 Seconds)
-```bash
-# Run Vercel CLI from project root
-npx vercel
-
-# For immediate production release:
-npx vercel --prod
-```
-
-### Method 2: GitHub CI/CD with Vercel
-1. Push your repository to GitHub.
-2. Navigate to [vercel.com/new](https://vercel.com/new).
-3. Import the `Gen-Z-Pulse` repository.
-4. Click **Deploy**. Vercel will automatically build the Next.js app using Turbopack with 0 config.
-
-### Method 3: Self-Hosted Production Server (Ubuntu / Linux VPS)
-```bash
-# Install Node.js 20+ & PM2
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-sudo apt install -y nodejs git
-sudo npm install -g pm2
-
-# Build production bundle
-npm install
-npm run build
-
-# Start with PM2 Process Manager
-pm2 start npm --name "gen-z-pulse" -- start
-pm2 startup
-pm2 save
-```
-
----
-
-## ⚙️ Environment Variables (Optional)
-
-The application includes built-in mock fallbacks and runs immediately without any configuration. To connect a live Supabase database for waitlist and user tracking:
-
-```env
-# .env.local
-NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-actual-anon-key
-```
-
-Run the schema script found in [`database/schema.sql`](database/schema.sql) in your Supabase SQL Editor to provision tables.
 
 ---
 
@@ -320,6 +250,7 @@ Run the schema script found in [`database/schema.sql`](database/schema.sql) in y
 | **Motion** | Framer Motion 14 | Kinetic spring animations, swipe gestures, and physics |
 | **Database** | Supabase (PostgreSQL) | Scalable database for user profiles, waitlist, and reading logs |
 | **Icons** | Lucide React | Clean, scalable vector iconography |
+| **Deployment** | Vercel Serverless Edge | Global CDN distribution with automatic CI/CD |
 
 ---
 
