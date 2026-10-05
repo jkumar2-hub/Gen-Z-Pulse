@@ -181,19 +181,20 @@ function DepthSheet({ story, onClose, onAISummary }: { story: Story; onClose: ()
               <p style={{ fontFamily: "'Epilogue', sans-serif", fontSize: 14, lineHeight: 1.78, color: "#94A3B8", whiteSpace: "pre-line" }}>
                 {story.deepDive}
               </p>
-              <div style={{ marginTop: 20 }}>
+              <div style={{ marginTop: 20, display: "flex", gap: 10, flexWrap: "wrap" }}>
                 <a
                   href={story.sourceUrl || `https://news.google.com/search?q=${encodeURIComponent(story.headline + " " + story.source)}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
                   style={{
                     display: "inline-flex",
                     alignItems: "center",
                     gap: 8,
                     padding: "12px 18px",
                     borderRadius: 12,
-                    background: "rgba(59,130,246,0.14)",
-                    border: "1px solid rgba(59,130,246,0.35)",
+                    background: "rgba(59,130,246,0.18)",
+                    border: "1px solid rgba(59,130,246,0.45)",
                     color: "#93C5FD",
                     fontFamily: "'Space Grotesk', sans-serif",
                     fontWeight: 700,
@@ -202,7 +203,31 @@ function DepthSheet({ story, onClose, onAISummary }: { story: Story; onClose: ()
                     cursor: "pointer",
                   }}
                 >
-                  <span>📰 Go to Full Article ({story.source})</span>
+                  <span>📰 Full Article on {story.source}</span>
+                  <span>↗</span>
+                </a>
+                <a
+                  href={`https://news.google.com/search?q=${encodeURIComponent(story.headline + " " + story.source)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: 6,
+                    padding: "12px 16px",
+                    borderRadius: 12,
+                    background: "rgba(255,255,255,0.04)",
+                    border: "1px solid rgba(255,255,255,0.1)",
+                    color: "#CBD5E1",
+                    fontFamily: "'Space Grotesk', sans-serif",
+                    fontWeight: 600,
+                    fontSize: 12,
+                    textDecoration: "none",
+                    cursor: "pointer",
+                  }}
+                >
+                  <span>🔍 Google News</span>
                   <span>↗</span>
                 </a>
               </div>
@@ -272,6 +297,7 @@ function DepthSheet({ story, onClose, onAISummary }: { story: Story; onClose: ()
             href={story.sourceUrl || `https://news.google.com/search?q=${encodeURIComponent(story.headline + " " + story.source)}`}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
             style={{
               fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 13,
               padding: "13px 14px", borderRadius: 12, border: "1px solid rgba(59,130,246,0.35)",
@@ -422,6 +448,7 @@ function Card({
               href={story.sourceUrl || `https://news.google.com/search?q=${encodeURIComponent(story.headline + " " + story.source)}`}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
               style={{
                 fontFamily: "'Epilogue', sans-serif", fontSize: 12, color: "#60A5FA",
                 display: "inline-flex", alignItems: "center", gap: 4, textDecoration: "none",
@@ -436,6 +463,7 @@ function Card({
                 href={story.sourceUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
                 style={{
                   fontFamily: "'Space Grotesk', sans-serif", fontSize: 10, fontWeight: 700,
                   color: "#93C5FD", background: "rgba(59,130,246,0.18)",

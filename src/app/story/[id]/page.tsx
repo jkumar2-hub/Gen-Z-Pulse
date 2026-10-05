@@ -356,53 +356,72 @@ export default function StoryDetailPage() {
             />
           </motion.div>
 
-          {/* Read Full Article CTA */}
-          <motion.a
-            href={story.sourceUrl || `https://news.google.com/search?q=${encodeURIComponent(story.headline + " " + story.source)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            whileHover={{ scale: 1.02, borderColor: "rgba(59,130,246,0.5)" }}
-            whileTap={{ scale: 0.98 }}
-            style={{
-              display: "flex", alignItems: "center", justifyContent: "space-between",
-              gap: 12, marginTop: 24, padding: "16px 20px",
-              background: "linear-gradient(135deg, rgba(255,255,255,0.04), rgba(59,130,246,0.06))",
-              border: "1px solid rgba(59,130,246,0.25)",
-              borderRadius: 14, textDecoration: "none",
-              boxShadow: "0 4px 20px rgba(0,0,0,0.2)",
-              cursor: "pointer",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          {/* Dual Action Article Links CTA */}
+          <div style={{ display: "flex", flexDirection: "column", gap: 10, marginTop: 24 }}>
+            <motion.a
+              href={story.sourceUrl || `https://news.google.com/search?q=${encodeURIComponent(story.headline + " " + story.source)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 }}
+              whileHover={{ scale: 1.01, borderColor: "rgba(59,130,246,0.6)" }}
+              whileTap={{ scale: 0.98 }}
+              style={{
+                display: "flex", alignItems: "center", justifyContent: "space-between",
+                gap: 12, padding: "16px 20px",
+                background: "linear-gradient(135deg, rgba(59,130,246,0.12), rgba(124,58,237,0.1))",
+                border: "1px solid rgba(59,130,246,0.35)",
+                borderRadius: 14, textDecoration: "none",
+                boxShadow: "0 4px 20px rgba(59,130,246,0.1)",
+                cursor: "pointer",
+              }}
+            >
+              <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                <div style={{
+                  width: 42, height: 42, borderRadius: 12,
+                  background: "rgba(59,130,246,0.2)",
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  fontSize: 22, flexShrink: 0
+                }}>
+                  📰
+                </div>
+                <div>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 14, color: "#F8F8FF", margin: 0 }}>
+                    Read Full Article on {story.source}
+                  </p>
+                  <p style={{ fontFamily: "'Epilogue', sans-serif", fontSize: 12, color: "#93C5FD", margin: "2px 0 0" }}>
+                    Verified original source publication · Instant access
+                  </p>
+                </div>
+              </div>
               <div style={{
-                width: 40, height: 40, borderRadius: 10,
-                background: "rgba(59,130,246,0.15)",
-                display: "flex", alignItems: "center", justifyContent: "center",
-                fontSize: 20, flexShrink: 0
+                display: "flex", alignItems: "center", gap: 6,
+                background: "#2563EB", padding: "8px 14px", borderRadius: 8,
+                fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 12, color: "#FFFFFF"
               }}>
-                📰
+                <span>Open Article</span>
+                <span style={{ fontSize: 13 }}>↗</span>
               </div>
-              <div>
-                <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 14, color: "#F8F8FF", margin: 0 }}>
-                  Go to Full Article Link
-                </p>
-                <p style={{ fontFamily: "'Epilogue', sans-serif", fontSize: 12, color: "#60A5FA", margin: "2px 0 0" }}>
-                  Original coverage by {story.source}
-                </p>
-              </div>
-            </div>
-            <div style={{
-              display: "flex", alignItems: "center", gap: 6,
-              background: "rgba(59,130,246,0.12)", padding: "6px 12px", borderRadius: 8,
-              fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 12, color: "#93C5FD"
-            }}>
-              <span>Open</span>
-              <span style={{ fontSize: 14 }}>↗</span>
-            </div>
-          </motion.a>
+            </motion.a>
+
+            <a
+              href={`https://news.google.com/search?q=${encodeURIComponent(story.headline + " " + story.source)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "flex", alignItems: "center", justifyContent: "space-between",
+                padding: "10px 16px", borderRadius: 10,
+                background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)",
+                color: "#94A3B8", textDecoration: "none", fontSize: 12,
+                fontFamily: "'Epilogue', sans-serif",
+                cursor: "pointer",
+              }}
+            >
+              <span>🔍 View all syndicated coverage on Google News</span>
+              <span style={{ color: "#60A5FA" }}>Search ↗</span>
+            </a>
+          </div>
 
           {/* Why This Matters */}
           <motion.section
