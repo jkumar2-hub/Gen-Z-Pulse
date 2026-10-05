@@ -73,3 +73,14 @@ CREATE TABLE user_iq_scores (
 ALTER TABLE user_iq_scores ENABLE ROW LEVEL SECURITY;
 CREATE POLICY "Users can see all scores for leaderboard" ON user_iq_scores FOR SELECT USING (true);
 CREATE POLICY "Users can insert their own score" ON user_iq_scores FOR INSERT WITH CHECK (auth.uid() = user_id);
+
+-- 6. Waitlist (Early access & Pro signups)
+CREATE TABLE waitlist (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  email TEXT UNIQUE NOT NULL,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL
+);
+
+ALTER TABLE waitlist ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Anyone can join waitlist" ON waitlist FOR INSERT WITH CHECK (true);
+CREATE POLICY "Admins can view waitlist" ON waitlist FOR SELECT USING (true);
