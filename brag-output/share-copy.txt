@@ -1,0 +1,12 @@
+Gen Z doesn't read traditional news. We’re buried in clickbait, paywalls, and political noise.
+
+So we built Gen Z Pulse — India’s real-time context engine for the TikTok generation.
+
+⚡ 3-Layer Depth Dial (15s Pulse, 60s Context, 3m Deep Dive)
+✨ Instant Multi-Angle AI Summaries (TL;DR, No-Cap Take, Career Impact)
+🧬 Source DNA™ Credibility Scoring & Bias Radar
+📰 100% Verified Primary Sources — Zero 404s
+🏆 Gamified Campus News IQ™ & Leaderboards
+
+Try it live in production: https://gen-z-pulse-kappa.vercel.app/
+Code & Architecture: https://github.com/jkumar2-hub/Gen-Z-Pulse
