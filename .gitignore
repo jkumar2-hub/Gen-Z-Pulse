@@ -42,3 +42,6 @@ next-env.d.ts
 
 # planning & scratch
 .planning/
+
+# brag intermediate stems
+brag-output/work/
