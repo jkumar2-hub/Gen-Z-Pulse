@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { STORIES, STORY_ARCS, CATEGORIES } from "@/data/stories";
 
+export const dynamic = "force-dynamic";
+
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const category = searchParams.get("category") || "all";
